@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="139Email" parallel="classes">
+	<test name="拨测" preserver-order="true"><!--preserve-order 控制测试用例按顺序执行 -->
+		<classes>
+			<class name="com.mail.run.Run139Email" />
+		</classes>
+		<listeners>
+			<listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		</listeners>
+		<usedefaultlisteners name="false" />
+	</test>
+</suite>
