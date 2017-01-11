@@ -94,17 +94,17 @@ public class Run139Email {
 			Log.info("----------运行：登录-------------");
 			components.testLoginDelay(driver, networkType, user, 1);
 
-			Log.info("----------运行：接收本域邮件----------");
-			components.testReceiveMail(driver, user2, recipient);
-
-			Log.info("----------运行：发送邮件----------");
-			components.testWriterMail(driver, recipient);
-			
-			Log.info("----------运行：打开未读邮件----------");
-			components.testUnReadMail(driver);
-
-			Log.info("----------运行：下载附件----------");
-			components.testDownLoad(driver, path, filename);
+//			Log.info("----------运行：接收本域邮件----------");
+//			components.testReceiveMail(driver, user2, recipient);
+//
+//			Log.info("----------运行：发送邮件----------");
+//			components.testWriterMail(driver, recipient);
+//			
+//			Log.info("----------运行：打开未读邮件----------");
+//			components.testUnReadMail(driver);
+//
+//			Log.info("----------运行：下载附件----------");
+//			components.testDownLoad(driver, path, filename);
 
 		} catch (Exception e) {
 
