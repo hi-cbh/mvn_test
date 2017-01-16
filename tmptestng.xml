@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="功能测试" parallel="classes">
+	<test name="测试1" preserver-order="true"><!--preserve-order 控制测试用例按顺序执行 -->
+		<classes>
+			<class name="com.test.testng.TestNGLearn1">
+				<methods>
+					<include name="TestNgLearn" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="测试2" preserver-order="true"><!--preserve-order 控制测试用例按顺序执行 -->
+		<classes>
+			<class name="com.test.testng.Success">
+				<methods>
+					<include name="successes" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<usedefaultlisteners name="false" />
+</suite>

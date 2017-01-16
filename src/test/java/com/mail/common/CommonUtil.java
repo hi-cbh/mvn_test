@@ -217,11 +217,13 @@ public class CommonUtil {
 	public static void screenShot(AndroidDriver driver, String path,String screenshotName) {
 			File screenshot = driver.getScreenshotAs(OutputType.FILE);// 截取当前图片
 			try {
+				System.out.println("屏幕截图： "+path+screenshotName);
 				FileUtils.copyFile(
 						screenshot,
 						new File(path + screenshotName
 								+ formatUtil.getSystemTime("_MM.dd-HH.mm.ss")
 								+ ".png"));
+				
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

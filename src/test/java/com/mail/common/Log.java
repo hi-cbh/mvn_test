@@ -2,6 +2,7 @@ package com.mail.common;
 
 
 import org.apache.log4j.Logger;
+import org.testng.Reporter;
 
 
 /**
@@ -27,7 +28,8 @@ public class Log {
 	
 	public static void info(String message){
 		System.out.println(message);
-		Log.info(message);
+		Reporter.log(message);
+		//Log.info(message);
 	}
 	public static void error(String message){
 		Log.error(message);

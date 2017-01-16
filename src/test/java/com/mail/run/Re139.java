@@ -79,13 +79,14 @@ public class Re139 {
 		Log.info("打开URL: http://mail.10086.cn/");
 		driver.get("http://mail.10086.cn/");
 		sleep(3000);
-		Log.info("等待60秒，判断是否进入登录页面");
-		if(!elementManager.doesWebElementExist(driver, By.name("UserName"))){
-			sleep(3000);
-			elementManager.waitForElement(driver, By.id("logout"), 20).click();
-			elementManager.waitForElement(driver, By.id("relogin"), 20).click();
-		}
-		
+		Log.info("等待10秒，判断是否进入登录页面");
+		sleep(10*1000);
+//		if(!elementManager.doesWebElementExist(driver, By.name("UserName"))){
+//			sleep(3000);
+//			elementManager.waitForElement(driver, By.id("logout"), 20).click();
+//			elementManager.waitForElement(driver, By.id("relogin"), 20).click();
+//		}
+//		
 		Log.info("清除用户名信息");
 		elementManager.waitForElement(driver, By.name("UserName"), 20).clear();
 		sleep(3000);
@@ -93,21 +94,20 @@ public class Re139 {
 		Log.info("输入用户名：" + user.getUser());
 		elementManager.waitForElement(driver, By.name("UserName"), 20).sendKeys(user.getUser());
 		
-		Log.info("输入密码：" + user.getUser());
+		Log.info("输入密码：" + user.getPassword());
 		elementManager.waitForElement(driver, By.id("txtPass"), 20).sendKeys(user.getPassword());
 		
 		Log.info("点击登录按钮");
 		driver.findElement(By.id("loginBtn")).click();
 		
-		Log.info("等待10秒");
-		sleep(10 * 1000);
+		Log.info("等待5秒");
+		sleep(5 * 1000);
 		
 		Log.info("点击邮箱链接");
 		elementManager.waitForElement(driver, By.name("mailbox_1"), 20).click();
 		
-		Log.info("等待页面缓冲完成");
-		while (!elementManager.doesElementDisplay(driver, By.xpath("//input[@id='tb_mailSearch']"))) {
-		}
+		Log.info("等待页面缓冲完成,等待5秒");
+		sleep(5 * 1000);
 		
 		Log.info("点击写邮件链接");
 		driver.findElement(By.xpath("//a[@id='btn_compose']")).click();
@@ -128,7 +128,7 @@ public class Re139 {
 		Log.info("点击发送");
 		driver.findElement(By.id("bottomSend")).click();
 		
-		Log.info("等待20秒");
+		Log.info("等待5秒");
 		sleep(5*1000);
 		
 		if(elementManager.doesElementDisplay(driver, By.xpath("//h1[@id='snedStatus']"))){

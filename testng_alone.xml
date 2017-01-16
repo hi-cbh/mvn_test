@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="拨测" parallel="classes">
+	<test name="账号登录" preserver-order="true">
+		<classes>
+			<class name="com.testng.Run139Email1">
+				<methods>
+					<include name="testCaseLogin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="接收本域邮件" preserver-order="true">
+		<classes>
+			<class name="com.testng.Run139Email2">
+				<methods>
+					<include name="testCaseLogin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+		<test name="发送邮件" preserver-order="true">
+		<classes>
+			<class name="com.testng.Run139Email4">
+				<methods>
+					<include name="testCaseSendMail" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="打开未读邮件和下载附件" preserver-order="true">
+		<classes>
+			<class name="com.testng.Run139Email4">
+				<methods>
+					<include name="testCaseOpenAndDownload" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="一键登录" preserver-order="true">
+		<classes>
+			<class name="com.testng.Run139Email5">
+				<methods>
+					<include name="testCasePhoneLogin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<usedefaultlisteners name="false" />
+</suite>
