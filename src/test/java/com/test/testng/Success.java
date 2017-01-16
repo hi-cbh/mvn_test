@@ -21,12 +21,12 @@ import org.testng.annotations.Test;
 
 public class Success {
 
-	@Test(invocationCount=10)
-	public void successes(){
-		Assert.assertTrue(true, "成功");
-		System.out.println("hello");
-	}
-	
+//	@Test(invocationCount=10)
+//	public void successes(){
+//		Assert.assertTrue(true, "成功");
+//		System.out.println("hello");
+//	}
+//	
 	@Test
 	public void careInterfaceSmoke(){
 	    Assert.assertEquals(1,2);
@@ -48,7 +48,7 @@ public class Success {
 	        System.out.println(file.getAbsolutePath());
 	        Reporter.log(file.getAbsolutePath());
 	        String filePath = file.getAbsolutePath();
-	        filePath  = filePath.replace("D:\\jenkins_home\\workspace","http://192.168.10.39:8080");
+	        filePath  = filePath.replace("D://jenkins_home//workspace","http://192.168.10.39:8080");
 	        Reporter.log("<img src='"+filePath+"/"+result.getName()+".jpg' hight='100' width='100'/>");
 	        int width = 100;
 	        int height = 100;

@@ -988,3 +988,5 @@
 2017-01-16 10:15:28,506 INFO  [Log] 判断当前页面是否为账号登录页面 
 2017-01-16 10:15:28,710 INFO  [Log] 等待10秒 
 2017-01-16 10:15:39,007 INFO  [Log] 等待出现订阅推荐页出现，等待：60 
+2017-01-16 20:01:31,071 INFO  [RetryExec] I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:4723: Connection reset 
+2017-01-16 20:01:31,071 INFO  [RetryExec] Retrying request to {}->http://127.0.0.1:4723 

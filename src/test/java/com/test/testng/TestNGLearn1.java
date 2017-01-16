@@ -2,23 +2,18 @@ package com.test.testng;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class TestNGLearn1 {
 
-	@BeforeSuite
-	public void beforeSuite(){
-		System.out.println("this is before Suite");
-	}
-	
-	@AfterSuite
-	public void afterSuite(){
-		System.out.println("this is after Suite");
-	}
-    @BeforeClass
+
+
+    @BeforeMethod
     public void beforeClass() {
         System.out.println("this is before class");
     }
@@ -29,7 +24,7 @@ public class TestNGLearn1 {
         System.out.println("this is TestNG test case");
     }
 
-    @AfterClass
+    @AfterMethod
     public void afterClass() {
         System.out.println("this is after class");
     }
