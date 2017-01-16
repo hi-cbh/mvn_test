@@ -1,5 +1,6 @@
 package com.test.testng;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
@@ -24,6 +25,7 @@ public class TestNGLearn1 {
 
     @Test
     public void TestNgLearn() {
+    	Assert.assertTrue(false, "测试失败");
         System.out.println("this is TestNG test case");
     }
 

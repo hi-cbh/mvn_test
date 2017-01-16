@@ -35,8 +35,8 @@ public class ObjectMap {
 		String locatorType = locator.split(">")[0];
 		String locatorValue = locator.split(">")[1];
 		
-		System.out.println("locatorType: " + locatorType);
-		System.out.println("locatorValue1: " + locatorValue);
+//		System.out.println("locatorType: " + locatorType);
+//		System.out.println("locatorValue1: " + locatorValue);
 		//
 		try {
 			locatorValue = new String(locatorValue.getBytes("ISO8859-1"), "UTF-8");

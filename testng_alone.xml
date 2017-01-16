@@ -20,7 +20,7 @@
 	</test>
 		<test name="发送邮件" preserver-order="true">
 		<classes>
-			<class name="com.testng.Run139Email4">
+			<class name="com.testng.Run139Email3">
 				<methods>
 					<include name="testCaseSendMail" />
 				</methods>
