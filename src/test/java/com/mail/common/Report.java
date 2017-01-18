@@ -24,7 +24,7 @@ public class Report {
        
         String filePath = file.getAbsolutePath();
         //在jenkins中使用
-       //filePath  = filePath.replace("D://jenkins_home//workspace","http://192.168.10.39:8080");
+        filePath  = filePath.replace("D://jenkins_home//workspace","http://localhost:8000");
         
 
 		String picName = methodName+ formatUtil.getSystemTime("_MM.dd-HH.mm.ss") + ".png";
