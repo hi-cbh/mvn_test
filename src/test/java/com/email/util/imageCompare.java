@@ -21,8 +21,6 @@ import javax.imageio.ImageIO;
 /**
  * 用于图片对比
  * 
- * @author 程文健
- * @version 2.0 2016-3-15 <br>
  */
 
 public class imageCompare {

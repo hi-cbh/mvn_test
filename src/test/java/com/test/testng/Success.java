@@ -29,7 +29,12 @@ public class Success {
 //	
 	@Test
 	public void careInterfaceSmoke(){
-	    Assert.assertEquals(1,2);
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+	    Assert.assertEquals(3,2);
 	}
 
 	@AfterMethod(alwaysRun = true)
@@ -42,40 +47,19 @@ public class Success {
 	    System.out.println("result" + result);
 	    String methodName = result.getName();
 	    System.out.println(methodName);
-	    if (!result.isSuccess()) {
-	        File file = new File("");
-	        Reporter.setCurrentTestResult(result);
-	        System.out.println(file.getAbsolutePath());
-	        Reporter.log(file.getAbsolutePath());
-	        String filePath = file.getAbsolutePath();
-	        filePath  = filePath.replace("D://jenkins_home//workspace","http://192.168.10.39:8080");
-	        Reporter.log("<img src='"+filePath+"/"+result.getName()+".jpg' hight='100' width='100'/>");
-	        int width = 100;
-	        int height = 100;
-	        String s = "这是一张测试图片";
-	        File screenShotFile = new File(file.getAbsolutePath()+"/"+result.getName()+".jpg");
+	    
+	    File file = new File("");
+//        Reporter.setCurrentTestResult(result);
+//        System.out.println(file.getAbsolutePath());
+        Reporter.log(file.getAbsolutePath()+"\\"+result.getName()+".jpg");
+        String filePath = file.getAbsolutePath();
+//        //filePath  = filePath.replace("D://jenkins_home//workspace","http://192.168.10.39:8080");
+        Reporter.log("<img src='"+filePath+"\\"+result.getName()+".jpg'/>");
+//
+//        new File(file.getAbsolutePath()+"\\"+result.getName()+"1.jpg");
 
-	        Font font = new Font("Serif", Font.BOLD, 10);
-	        BufferedImage bi = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-	        Graphics2D g2 = (Graphics2D)bi.getGraphics();
-	        g2.setBackground(Color.BLACK);
-	        g2.clearRect(0, 0, width, height);
-	        g2.setPaint(Color.RED);
-
-	        FontRenderContext context = g2.getFontRenderContext();
-	        Rectangle2D bounds = font.getStringBounds(s, context);
-	        double x = (width - bounds.getWidth()) / 2;
-	        double y = (height - bounds.getHeight()) / 2;
-	        double ascent = -bounds.getY();
-	        double baseY = y + ascent;
-
-	        g2.drawString(s, (int)x, (int)baseY);
-
-	        try {
-	            ImageIO.write(bi, "jpg", screenShotFile);
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	        }
-	    }
+	    
+	    Reporter.log("<img src='123.jpg'/>", false);;
+	    Reporter.log("<img src='"+filePath+"/"+result.getName()+".jpg' hight='100' width='100'/>");
 	}
 }

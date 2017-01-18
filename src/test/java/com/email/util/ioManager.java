@@ -37,8 +37,6 @@ import java.util.Map;
 /**
  * 用于输入输出、日志、报告产出等操作
  * 
- * @author 程文健
- * @version 1.3.1 2016-4-11
  */
 
 public class ioManager {

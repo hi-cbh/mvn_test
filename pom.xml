@@ -15,12 +15,12 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.3.1</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 					<encoding>utf8</encoding>
-					<compilerArguments>
+				<!--  	<compilerArguments>
 						<extdirs>C:\Users\Administrator\workspace_appium\appium.maven\libs</extdirs>
-					</compilerArguments>
+					</compilerArguments>-->
 				</configuration>
 			</plugin>
 			<plugin>
@@ -30,7 +30,7 @@
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
 					<suiteXmlFiles>
-						<suiteXmlFile>tmptestng.xml</suiteXmlFile>
+						<suiteXmlFile>testng_alone.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

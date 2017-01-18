@@ -148,7 +148,7 @@ public class Components {
 		elementManager.waitForElement(driver, By.id("cn.cj.pe:id/login_name"),
 				10).sendKeys(user.getUser());
 
-		Log.info("输入密码：" + user.getPassword());
+		Log.info("输入密码：" + "xxxxxxxxxxxxxxx");
 		driver.findElement(By.id("cn.cj.pe:id/login_password")).click();
 		driver.findElement(By.id("cn.cj.pe:id/login_password")).sendKeys(
 				user.getPassword());

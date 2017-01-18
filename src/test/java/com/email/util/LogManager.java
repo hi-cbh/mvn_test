@@ -6,7 +6,6 @@ import java.util.Date;
 /**
  * 日志类
  * 
- * @author xiaoM
  *
  */
 

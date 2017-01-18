@@ -15,9 +15,7 @@ import java.util.Scanner;
 
 /**
  * 用于文件管理，向文档进行增删改等操作
- * 
- * @author 程文健
- * @version 1.2 2016-4-1
+
  */
 
 public class FileManager {

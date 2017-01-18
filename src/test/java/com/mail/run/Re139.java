@@ -94,7 +94,7 @@ public class Re139 {
 		Log.info("输入用户名：" + user.getUser());
 		elementManager.waitForElement(driver, By.name("UserName"), 20).sendKeys(user.getUser());
 		
-		Log.info("输入密码：" + user.getPassword());
+		Log.info("输入密码：" + "xxxxxxxxxxxxx");
 		elementManager.waitForElement(driver, By.id("txtPass"), 20).sendKeys(user.getPassword());
 		
 		Log.info("点击登录按钮");

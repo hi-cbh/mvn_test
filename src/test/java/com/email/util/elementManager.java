@@ -26,9 +26,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * 用于页面元素管理，等待页面元素，判断页面元素是否存在、是否被显示等。
- * 
- * @author 程文健
- * @version 2.3 2016-4-21
+
  */
 
 public class elementManager {

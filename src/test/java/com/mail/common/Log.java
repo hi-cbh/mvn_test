@@ -28,8 +28,8 @@ public class Log {
 	
 	public static void info(String message){
 		System.out.println(message);
-		Reporter.log(message);
-		//Log.info(message);
+		//Reporter.log(message);
+		Log.info(message);
 	}
 	public static void error(String message){
 		Log.error(message);

@@ -20,8 +20,6 @@ import org.junit.Assert;
 /**
  * 用于直接操作设备，如按坐标点击，滑动等。
  * 
- * @author 程文健/xiaoM
- * @version 1.0.1 2016-3-23
  * 			
  * 
  */

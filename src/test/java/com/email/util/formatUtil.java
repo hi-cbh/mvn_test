@@ -13,8 +13,6 @@ import java.util.Date;
 /**
  * 用于数据的格式化操作
  * 
- * @author 程文健
- * @version 1.0 2016-3-9
  */
 
 public class formatUtil {
