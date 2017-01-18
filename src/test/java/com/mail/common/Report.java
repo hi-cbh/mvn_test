@@ -36,7 +36,7 @@ public class Report {
 		//显示路径
 		Reporter.log("图片位置："+picPath);
 		//显示图片
-		DisplayPic(picPath,200,200);
+		//DisplayPic(picPath,200,200); jenkins显示图片有问题
 	}
 	
 	
