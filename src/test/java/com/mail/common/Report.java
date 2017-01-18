@@ -23,8 +23,9 @@ public class Report {
         Reporter.setCurrentTestResult(result);
        
         String filePath = file.getAbsolutePath();
+        System.out.println("filePath: " + filePath);
         //在jenkins中使用
-        filePath  = filePath.replace("D://jenkins_home//workspace","http://localhost:8000");
+        //filePath  = filePath.replace("D://jenkins_home//workspace","http://localhost:8000");
         
 
 		String picName = methodName+ formatUtil.getSystemTime("_MM.dd-HH.mm.ss") + ".png";
