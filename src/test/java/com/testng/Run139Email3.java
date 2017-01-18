@@ -88,7 +88,7 @@ public class Run139Email3 {
 		}
 
 		try {
-
+			Assert.fail("测试失败");
 			Log.info("----------运行：账号登录-------------");
 			components.testLogin(driver, networkType, user);
 			//Assert.fail("测试失败");
