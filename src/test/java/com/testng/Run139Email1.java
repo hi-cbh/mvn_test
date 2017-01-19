@@ -89,8 +89,9 @@ public class Run139Email1 {
 		//networkType = "CMCC";
 		try {
 
-			Assert.fail("测试失败");
+			
 			Log.info("----------运行：账号登录-------------");
+			Assert.fail("测试失败");
 			components.testLogin(driver, networkType, user);
 			
 			Log.info("----------运行：退出账号----------");
